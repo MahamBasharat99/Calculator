@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body >
+    <div class="mainsett">
+        <div >
+            <input class="inputresult" type="text" name="inputtext" id="result">
+        </div>
+        <div  style="margin-top: 35px;">
+            <button class="clear" onclick="clearResult()">C</button>
+            <button class="btnstyle" onclick="result.value=Math.pow(result.value,2)">x<sup>2</sup></button>
+            <button class="btnstyle" onclick="result.value=Math.pow(result.value,3)">x<sup>3</sup></button>
+            <button class="btnstyle" onclick="del()">Del</button>
+           
+        </div>
+        <div>
+     <button class="btnstyle" onclick="getNumber(Math.PI)">&pi;</button> 
+     <button class="btnstyle" id=""onclick="cubeRoot()"> 	∛</button>
+     <button class="btnstyle" id=""onclick="doMath()"> <b>√</b></button>
+     <button class="btnstyle" id=""onclick="logFunc()"> log</button>
+  
+        </div>
+        <div>
+     <button class="btnstyle" onclick="sinFunc()">sinx</button> 
+     <button class="btnstyle" id=""onclick="tanFunc()"> 	tanx</button>
+     <button class="btnstyle" id=""onclick="cosFunc()"> cosx</button>
+     <button class="btnstyle" id=""onclick="result.value=Math.exp(result.value)"> e<sup>x</sup></button>
+  
+        </div>
+    
+        <div>
+            <button class="btnstyle" onclick="getNumber('(')">(</button>
+            <button class="btnstyle" onclick="getNumber(')')">)</button>
+        
+            <button class="btnstyle" onclick="getNumber('/')">/</button>
+            <button class="btnstyle"onclick="getNumber('%')">%</button>
+        </div>
+     
+        <div >
+            <button class="btnstylesim" onclick ="getNumber('7')">7</button>
+            <button class="btnstylesim" onclick="getNumber('8')">8</button>
+            <button class="btnstylesim" onclick="getNumber('9')">9</button>
+            <button class="btnstyle" onclick="getNumber('*')"><span style="padding-bottom:5px" >x</span></button>
+        </div>
+      
+        <div >
+            <button class="btnstylesim" onclick="getNumber('4')">4</button>
+            <button class="btnstylesim" onclick="getNumber('5')">5</button>
+            <button class="btnstylesim" onclick="getNumber('6')" >6</button>
+            <button class="btnstyle"onclick="getNumber('-')">-</button>
+        </div>
+      
+        <div >
+            <button class="btnstylesim" onclick="getNumber('3')">3</button>
+            <button class="btnstylesim" onclick="getNumber('2')">2</button>
+            <button class="btnstylesim" onclick="getNumber('1')">1</button>
+            <button class="btnstyle" onclick="getNumber('+')">+</button>
+        </div>
+      
+        <div style="margin-bottom: 2px;">
+            <button class="btnstylesim" onclick="getNumber('-')">+/-</button>
+            <button class="btnstylesim" onclick="getNumber('0')">0</button>
+            <button class="btnstylesim "style="padding-bottom:8px" onclick="getNumber('.')">.</button>
+            <button class="btnstyle" onclick="getResult()">=</button>
+        </div>
+      
+        
+    </div>
+</body>
+
+</html>
